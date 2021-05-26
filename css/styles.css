@@ -296,6 +296,7 @@ ul {
 }
 
 /* portfolio */
+
 .list-works {
   display: flex;
   justify-content: center;
@@ -329,11 +330,16 @@ ul {
   border-left: 1px solid var(--border-second-color);
   border-right: 1px solid var(--border-second-color);
   border-bottom: 1px solid var(--border-second-color);
+  padding: 20px 24px;
 }
 
 /* .container .item {
   outline: 2px solid rgb(61, 190, 130);
 } */
+
+.example-list .title {
+  margin-bottom: 4px;
+}
 
 .example-list .text {
   color: var(--primaru-text-color);
