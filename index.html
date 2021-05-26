@@ -21,21 +21,26 @@
         <nav class="nav">
           <a href="./index.html  " class="logo"> Web<span class="logo-accent">Studio</span></a>
           <ul class="site-nav list">
-            <li><a href="" class="link active">Студия</a></li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li><a href="" class="link">Контакты</a></li>
+            <li class="item"><a href="" class="link active">Студия</a></li>
+            <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
         <ul class="auth-nav list">
-          <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+          </li>
+          <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
         </ul>
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero section">
         <div class="container">
-          <h1 class="title">Эффективные решения для вашего бизнеса</h1>
+          <h1 class="title">
+            Эффективные решения<br />
+            для вашего бизнеса
+          </h1>
           <button type="button" class="button">Заказать услугу</button>
         </div>
       </section>
@@ -43,26 +48,28 @@
         <div class="container">
           <!-- <h2>Особенности</h2> -->
           <ul class="list">
-            <li>
+            <li class="item">
               <h3 class="title">Внимание к деталям</h3>
-
               <p class="text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li>
+
+            <li class="item">
               <h3 class="title">Пунктуальность</h3>
               <p class="text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li>
+
+            <li class="item">
               <h3 class="title">Планирование</h3>
               <p class="text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li>
+
+            <li class="item">
               <h3 class="title">Современные технологии</h3>
               <p class="text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -75,14 +82,40 @@
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list">
-            <li>
-              <img src="./images/box1.jpg" alt="десктопные приложения" width="370" height="294" />
+            <li class="item">
+              <div class="card-thumb">
+                <img
+                  class="img-card"
+                  src="./images/box1.jpg"
+                  alt="десктопные приложения"
+                  width="370"
+                  height="294"
+                />
+              </div>
             </li>
-            <li>
-              <img src="./images/box2.jpg" alt="мобильные приложения" width="370" height="294" />
+
+            <li class="item">
+              <div class="card-thumb">
+                <img
+                  class="img-card"
+                  src="./images/box2.jpg"
+                  alt="мобильные приложения"
+                  width="370"
+                  height="294"
+                />
+              </div>
             </li>
-            <li>
-              <img src="./images/box3.jpg" alt="дизайнерские решения" width="370" height="294" />
+
+            <li class="item">
+              <div class="card-thumb">
+                <img
+                  class="img-card"
+                  src="./images/box3.jpg"
+                  alt="дизайнерские решения"
+                  width="370"
+                  height="294"
+                />
+              </div>
             </li>
           </ul>
         </div>
@@ -91,40 +124,68 @@
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="list">
-            <li>
-              <img
-                src="./images/igor_demianenko.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
-              <h3 class="title">Игорь Демьяненко</h3>
-              <p lang="en" class="text">Product Designer</p>
+            <li class="item card">
+              <div class="card-thumb">
+                <img
+                  class="img-card"
+                  src="./images/igor_demianenko.jpg"
+                  alt="Игорь Демьяненко"
+                  width="270"
+                  height="260"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="title">Игорь Демьяненко</h3>
+                <p lang="en" class="text">Product Designer</p>
+              </div>
             </li>
-            <li>
-              <img src="./images/olga_repina.jpg" alt="Ольга Репина" width="270" height="260" />
-              <h3 class="title">Ольга Репина</h3>
-              <p lang="en" class="text">Frontend Developer</p>
+
+            <li class="item card">
+              <div class="card-thumb">
+                <img
+                  class="img-card"
+                  src="./images/olga_repina.jpg"
+                  alt="Ольга Репина"
+                  width="270"
+                  height="260"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="title">Ольга Репина</h3>
+                <p lang="en" class="text">Frontend Developer</p>
+              </div>
             </li>
-            <li>
-              <img
-                src="./images/nikolay_taracov.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
-              <h3 class="title">Николай Тарасов</h3>
-              <p lang="en" class="text">Marketing</p>
+
+            <li class="item card">
+              <div class="card-thumb">
+                <img
+                  class="img-card"
+                  src="./images/nikolay_taracov.jpg"
+                  alt="Николай Тарасов"
+                  width="270"
+                  height="260"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="title">Николай Тарасов</h3>
+                <p lang="en" class="text">Marketing</p>
+              </div>
             </li>
-            <li>
-              <img
-                src="./images/mihail_ermakov.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
-              <h3 class="title">Михаил Ермаков</h3>
-              <p lang="en" class="text">UI Designer</p>
+
+            <li class="item card">
+              <div class="card-thumb">
+                <img
+                  class="img-card"
+                  src="./images/mihail_ermakov.jpg"
+                  alt="Михаил Ермаков"
+                  width="270"
+                  height="260"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="title">Михаил Ермаков</h3>
+                <p lang="en" class="text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>

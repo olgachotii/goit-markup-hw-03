@@ -7,6 +7,10 @@
   --section-second-color: #f5f4fa;
   --footer-background-color: #2f303a;
   --footer-link-color: rgba(255, 255, 255, 0.6);
+  --border-first-color: #ececec;
+  --border-second-color: #eeeeee;
+  --shadow-card: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -28,6 +32,11 @@ ul {
   padding-right: 0;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -35,20 +44,25 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
 
-  outline: 2px solid tomato;
-}
-
-.section .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  /* outline: 2px solid tomato; */
 }
 
 /* heder */
+.header .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 
 .header .container {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: var(--border-color);
+
+  /* outline: 2px solid rgb(61, 190, 130); */
 }
+
 .logo {
   display: inline-block;
 
@@ -61,11 +75,38 @@ ul {
   text-decoration: none;
 }
 
+.nav {
+  display: flex;
+  align-items: center;
+
+  /* outline: 2px solid rgb(61, 190, 130); */
+}
+
+.nav .logo {
+  margin-right: 93px;
+
+  /* outline: 2px solid rgb(61, 190, 130); */
+}
+
 .nav .logo-accent {
   color: var(--black-color);
 }
 
+/* site-nav */
+
+.site-nav {
+  display: flex;
+
+  /* outline: 2px solid rgb(61, 190, 130); */
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav .link {
+  display: block;
+
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -75,7 +116,21 @@ ul {
   text-decoration: none;
 }
 
+/* auth-nav */
+
+.auth-nav {
+  display: flex;
+
+  /* outline: 2px solid rgb(61, 190, 130); */
+}
+
+.auth-nav .item + .item {
+  margin-left: 50px;
+}
+
 .auth-nav .link {
+  display: block;
+
   color: var(--primaru-text-color);
 
   font-weight: 500;
@@ -121,7 +176,7 @@ ul {
   line-height: 1.6;
 }
 
-.hero .title {
+.hero.section .title {
   margin-bottom: 30px;
 
   color: var(--wight-color);
@@ -134,7 +189,7 @@ ul {
   text-transform: uppercase;
 }
 
-.hero .button {
+.hero.section .button {
   min-width: 200px;
   padding: 10px 32px;
 
@@ -159,7 +214,25 @@ ul {
   text-align: center;
 }
 
-.calling .container {
+.features .list,
+.calling .list,
+.team .list {
+  display: flex;
+}
+
+.features .item + .item,
+.calling .item + .item,
+.team .item + .item {
+  margin-left: 30px;
+}
+
+.calling .img-card,
+.team .img-card,
+.example-list .img-card {
+  display: block;
+}
+
+.calling {
   padding-top: 0;
 }
 
@@ -173,10 +246,6 @@ ul {
 .features .title {
   margin-bottom: 10px;
   text-transform: uppercase;
-}
-
-.team {
-  background-color: var(--section-second-color);
 }
 
 .section .button {
@@ -198,7 +267,22 @@ ul {
   line-height: 2;
 }
 
+.team {
+  background-color: var(--section-second-color);
+}
+
+.team .card-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  background-color: var(--wight-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: var(--shadow-card);
+}
+
 .team .title {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -211,9 +295,45 @@ ul {
   text-align: center;
 }
 
+/* portfolio */
+.list-works {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  /* outline: 2px solid rgb(61, 190, 130); */
+}
+
+.list-works .item + .item {
+  margin-left: 8px;
+}
+
+.example-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(100% / 3 - 60px);
+  margin: -15px;
+
+  /* outline: 2px solid rgb(61, 190, 130); */
+}
+
+.example-list .item {
+  margin: 15px;
+}
+
 .example-list .link {
   text-decoration: none;
 }
+
+.example-list .card-content {
+  border-left: 1px solid var(--border-second-color);
+  border-right: 1px solid var(--border-second-color);
+  border-bottom: 1px solid var(--border-second-color);
+}
+
+/* .container .item {
+  outline: 2px solid rgb(61, 190, 130);
+} */
 
 .example-list .text {
   color: var(--primaru-text-color);
@@ -237,7 +357,7 @@ ul {
   line-height: 2;
 }
 
-.footer .container {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
