@@ -47,7 +47,12 @@ ul {
   /* outline: 2px solid tomato; */
 }
 
-/* heder */
+/* header */
+
+.header {
+  border-bottom: 1px solid var(--border-first-color);
+}
+
 .header .link {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -57,8 +62,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  border-bottom: var(--border-color);
 
   /* outline: 2px solid rgb(61, 190, 130); */
 }
